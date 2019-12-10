@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0091EA"
+    android:windowSoftInputMode="stateVisible|adjustResize"
+    tools:context=".HomeScreen">
+
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="Reset Scan" />
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="329dp"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/white"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:maskColor="#77000000">
+
+        <FrameLayout
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        </FrameLayout>
+    </com.budiyev.android.codescanner.CodeScannerView>
+
+    <TextView
+        android:id="@+id/UsernameTextView"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="211dp"
+        android:textColor="#F1E4E4" />
+
+    <TextView
+        android:id="@+id/FullnameTextView"
+        android:layout_width="206dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="110dp"
+        android:textColor="#F1E4E4" />
+
+    <TextView
+        android:id="@+id/NIMTextView"
+        android:layout_width="203dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="206dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="210dp"
+        android:textColor="#F1E4E4" />
+
+    <TextView
+        android:id="@+id/ClassIDTextView"
+        android:layout_width="202dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="207dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="110dp"
+        android:textColor="#F1E4E4" />
+
+    <TextView
+        android:id="@+id/classID"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="157dp"
+        android:text="ID Ruang"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        tools:text="ID Ruang" />
+
+    <TextView
+        android:id="@+id/classID2"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="266dp"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        tools:text="ID" />
+
+    <TextView
+        android:id="@+id/classID3"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="267dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        tools:text="Username" />
+
+    <TextView
+        android:id="@+id/Nama"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="158dp"
+        android:text="Nama"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        tools:text="Nama" />
+
+    <Button
+        android:id="@+id/HistoryButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="33dp"
+        android:background="#00FFFFFF"
+        android:foreground="@android:drawable/ic_menu_recent_history"
+        android:visibility="gone" />
+
+</RelativeLayout>
